@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Refined Code Review</title>
+  </head>
+  <body>
+    <h1>Code Review Request</h1>
+    <form method="POST" action="/submit">
+      <input
+        type="url"
+        name="repo_url"
+        placeholder="GitHub Repo URL"
+        required
+      />
+      <select name="template">
+        <option value="basic">Basic Review</option>
+        <option value="bugfix">Bug Fix Template</option>
+      </select>
+      <button type="submit">Analyze Code</button>
+    </form>
+  </body>
+</html>

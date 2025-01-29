@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Metrics</title>
+  </head>
+  <body>
+    <h1>Code Quality Metrics</h1>
+    <table border="1">
+      <tr>
+        <th>Timestamp</th>
+        <th>Lint Errors</th>
+      </tr>
+      {% for metric in metrics %}
+      <tr>
+        <td>{{ metric.timestamp }}</td>
+        <td>{{ metric.lint_errors }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="/">Submit Another Review</a>
+  </body>
+</html>
